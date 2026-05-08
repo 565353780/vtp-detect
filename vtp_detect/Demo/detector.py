@@ -10,8 +10,9 @@ from vtp_detect.Module.detector import Detector
 
 def demo():
     home = os.environ['HOME']
+    vhome = '/vepfs-cnbja62d5d769987/lichanghao'
 
-    model_file_path = f'{home}/chLi/Model/VTP/vtp.pth'
+    model_file_path = f'{vhome}/chLi/Model/VTP/VTP-Large-f16d64'
     dtype = "auto"
     device = "cuda:0"
 
