@@ -145,7 +145,7 @@ class Detector(object):
 
         Args:
             image_tensor: ``[B, H, W, 3]``, float, values in ``[0, 1]``. Padded bottom/right to
-                a multiple of ``patch_size``, ImageNet-normalized (no resize).
+                a multiple of ``patch_size``, ImageNet-normalized (no resize). RGB order.
             use_bottleneck: Passed to ``VTPModel.get_last_layer_feature`` (reconstruction bottleneck).
 
         Returns:
