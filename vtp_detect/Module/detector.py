@@ -95,6 +95,8 @@ class Detector(object):
 
         if pretrained_path is not None:
             self.model = VTPModel.from_pretrained(pretrained_path)
+            print("[INFO][Detector::__init__]")
+            print("\t model loaded from:", pretrained_path)
         else:
             cfg = VTPConfig(train_clip=False, train_reconstruction=False)
             self.model = VTPModel(cfg)
